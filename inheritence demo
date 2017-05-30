@@ -1,0 +1,45 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace asishcsharp
+{
+    class Inherirence
+    {
+        protected string name, email;
+        public Inherirence(String name,String email)
+        {
+            this.name = name;
+            this.email = email;
+        }
+        public void Print()
+        {
+            Console.WriteLine(name);
+            Console.WriteLine(email);
+
+        }
+    }
+    class Employee:Inherirence
+    {
+        protected String Company;
+        public Employee(String name,String email,String company):base(name,email)
+        {
+            this.Company = Company;
+        }
+        public new void Print()
+        {
+            base.Print();
+            Console.WriteLine(Company);
+        }
+    }
+    class Student
+    {
+        public static void Main()
+        {
+            Employee e = new Employee("asish", "asishdharamukkula@gmail.com", "Lendi");
+            e.Print();
+        }
+    }
+}
