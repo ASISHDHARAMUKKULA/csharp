@@ -1,0 +1,49 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace asishcsharp
+{
+    class runtimepolymorphismdemo
+    {
+        protected String name, email;
+        public runtimepolymorphismdemo(String name, String email)
+        {
+            this.name = name;
+            this.email = email;
+        }
+        public virtual void Print()
+        {
+
+            Console.WriteLine(name);
+            Console.WriteLine(email);
+        }
+    }
+    class A:runtimepolymorphismdemo
+    {
+        private String company;
+        public A(String name,String email,String company):base(name,email)
+        {
+            this.company = company;
+        }
+        public override void Print()
+        {
+            base.Print();
+            Console.WriteLine(company);
+        }
+        
+            
+    }
+    class B
+    {
+        public static void Main()
+        {
+            runtimepolymorphismdemo rd = new A("asish", "asishdharamukkula@gmail.com", "lendi");
+            rd.Print();
+        }
+    }
+    
+}
+
