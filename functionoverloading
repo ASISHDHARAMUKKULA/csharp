@@ -1,0 +1,50 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace asishcsharp
+{
+    class Overloading
+    {
+        private int hour, min, sec;
+        public void Set(int h)
+        {
+            hour = h;
+        }
+        public void Set(int h, int m)
+        {
+            hour = h;
+            min = m;
+        }
+        public void Set(int h, int m, int s)
+        {
+            hour = h;
+            min = m;
+            sec = s;
+
+
+        }
+        public void Print()
+        {
+            Console.WriteLine("{0}:{1}:{2}", hour, min, sec);
+        }
+    }
+    class Function
+    {
+        public static void Main()
+        {
+            Overloading f = new Overloading();
+            f.Set(10);
+            f.Print();
+            f.Set(10, 20);
+            f.Print();
+
+            f.Set(10, 20, 30);
+            f.Print();
+
+
+        }
+    }
+}
