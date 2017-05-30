@@ -1,0 +1,58 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace asishcsharp
+{
+    interface Icounter
+    {
+        void Inc();
+        void Dec();
+        void Print();
+
+    }
+    class Intcounter:Icounter
+    {
+        private int v;
+        public void Inc()
+        {
+            v++;
+        }
+        public void Dec()
+        {
+            v--;
+        }
+        public void Print()
+        {
+            Console.WriteLine(v);
+        }
+    }
+    class DoubleCounter:Icounter
+    {
+        private double v;
+        public void Inc()
+        {
+            v += 0.1;
+        }
+        public void Dec()
+        {
+            v -= 0.1;
+        }
+        public  void Print()
+        {
+            Console.WriteLine(v);
+        }
+    }
+    class C
+    {
+        public static void Main()
+        {
+            Icounter c = new Intcounter();
+            c.Inc();
+            c.Print();
+                 
+        }
+    }
+}
