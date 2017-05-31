@@ -1,0 +1,60 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace asishcsharp
+{
+    class Objectclasscdemo
+    {
+        private int hours, minutes, seconds;
+        public Objectclasscdemo(int hours,int minutes,int seconds)
+        {
+            this.hours = hours;
+            this.minutes = minutes;
+            this.seconds = seconds;
+
+        }
+        public int TotalSeconds
+        {
+            get
+            {
+                return hours * 3600 + minutes * 60 + seconds;
+            }
+        }
+        public override bool Equals(object obj)
+        {
+            Objectclasscdemo d = obj as Objectclasscdemo;
+            return d.TotalSeconds==this.TotalSeconds;
+        }
+        public override string ToString()
+        {
+            return string.Format("{0}:{1}:{2}", hours, minutes, seconds);
+        }
+    }
+    class UseTime
+    {
+        public static void Main()
+        {
+            Objectclasscdemo d = new Objectclasscdemo(10, 20, 30);
+            Objectclasscdemo f = new Objectclasscdemo(11, 22, 33);
+            Console.WriteLine(d.Equals(f));
+            Console.WriteLine(d);
+
+        }
+    }
+}
+
+
+
+======
+Object class is superir class for any class
+the methods in object class are
+1.bool Equals(Object)
+2.Protected void Finalise()
+3.int GethashCode()
+4.Type GetType()
+5.String ToString()
+
+when we are using these methods in our classes we have to ovveride them
