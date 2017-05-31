@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace asishcsharp
+{
+    class mathclassdemo
+    {
+        public static void Main()
+        {
+            Console.WriteLine(Math.PI);
+            Console.WriteLine(Math.Abs(-4));
+            Console.WriteLine(Math.Ceiling(10.3));
+            Console.WriteLine(Math.Floor(10.7));
+            Console.WriteLine(Math.Max(10,20));
+            Console.WriteLine(Math.Pow(3,3));
+            Console.WriteLine(Math.Round(10.354,2));
+            Console.WriteLine(Math.Sign(-100));
+            Console.WriteLine(Math.Truncate(23.445));
+        }
+    }
+}
+=======
+these are methods in Math class of .NET
