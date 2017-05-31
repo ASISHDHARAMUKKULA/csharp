@@ -1,0 +1,38 @@
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace asishcsharp
+{
+    class demo
+    {
+        public int age;
+        public demo()
+        {
+            age = 20;
+        }
+        public void Print()
+        {
+            Console.WriteLine(age);
+        }
+        public override string ToString()
+        {
+            return base.ToString();
+        }
+    }
+    class D
+    {
+        public static void Main()
+        {
+            demo j = new demo();
+            j.Print();
+            Console.WriteLine(j);
+        }
+    }
+}
+
+=======
+this program shows how to print details of object
