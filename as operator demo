@@ -1,0 +1,56 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace asishcsharp
+{
+    class as_operator_demo
+    {
+        public String Name { set; get; }
+        public int Salary { set; get; }
+        public int Age { get; set; }
+
+    }
+    class Random
+    {
+        public int Age { get; set; }
+        public String Name { get; set; }
+        public int id { get; set; }
+
+    }
+    class Salary
+    {
+        public static void Main()
+        {
+            as_operator_demo a = new as_operator_demo();
+            a.Name = "asish";
+            a.Salary = 900000;
+            a.Age = 32;
+            Random rd = new Random();
+            rd.Age = 25;
+            rd.Name = "asish";
+            rd.id = 104;
+            Console.WriteLine("Empobj is a Student ?: {0}", CheckAndConvertobject(rd));
+
+            Console.WriteLine("StuObj is a Student ?: {0}", CheckAndConvertobject(a));
+            Console.ReadLine();
+        }
+
+        public static string CheckAndConvertobject(dynamic obj)
+        {
+            
+            as_operator_demo a = obj as as_operator_demo;
+            if (a != null)
+                return "This is a Student and his name is " + a.Name;
+
+            return "Not a Student";
+
+
+
+
+
+        }
+    }
+}
