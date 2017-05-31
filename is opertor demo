@@ -1,0 +1,46 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace asishcsharp
+{
+    class Is_and_as_operators_demo
+    {
+        public int Stuno { get; set; }
+        public String Name { get; set; }
+        public int Age { get; set; }
+    }
+    class Emp
+    {
+        public int Age { set; get; }
+        public String Name { set; get; }
+        public int Salary { get; set; }
+        public int Empno { get; set; }
+    }
+    class Pro
+    {
+        public static void Main()
+        {
+            Is_and_as_operators_demo id = new Is_and_as_operators_demo();
+            id.Stuno = 1;
+            id.Name = "asish";
+            id.Age = 8;
+
+            Emp e = new Emp();
+            e.Age = 21;
+            e.Name = "asish";
+            e.Salary = 60000;
+            e.Empno = 101;
+            bool isStudent = (e is Is_and_as_operators_demo);
+            Console.WriteLine("Empobj is a Student ?: {0}", isStudent.ToString());
+            isStudent = (id is Is_and_as_operators_demo);
+            Console.WriteLine("Stuobj is a Student ?: {0}", isStudent.ToString());
+
+
+
+        }
+    }
+
+}
