@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace asishcsharp
+{
+    class Integer_Strucures
+    {
+        public static void Main()
+        {
+            Int32 a = 10;
+            Int32 b = 20;
+            Console.WriteLine(Int32.MinValue);
+            Console.WriteLine(Int32.MaxValue);
+            Console.WriteLine(a.CompareTo(b));
+            int v = Int32. Parse("100");
+            Console.WriteLine(v);
+        }
+            
+    }
+}
+
+====
+these are the methods present in Integer Structure in .NET
