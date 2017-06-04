@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace asishcsharp
+{
+    class stringclass
+    {
+        public static void Main()
+        {
+            String st = "Asish Hari Dattu Vijay";
+            Console.WriteLine("hari present {0}", st.Contains("hari"));
+            Console.WriteLine("starts with {0}", st.StartsWith("Asish"));
+            Console.WriteLine("first character {0}", st[0]);
+            Console.WriteLine("first 5 characters {0}", st.Substring(3));
+            Console.WriteLine("Append 2017 {0}", st.Insert(st.Length, "2017"));
+            Console.WriteLine("position of hari {0}", st.IndexOf("Hari"));
+            Console.WriteLine("Upper Case {0}", st.ToUpper());
+            String[] words = st.Split();
+            foreach (String w in words)
+                Console.WriteLine(w);
+
+        }
+    }
+}
+=======
+these sre some of the methods in string class
