@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace asishcsharp
+{
+    class char_structures
+    {
+        public static void Main()
+        {
+            char ch = 'a';
+            char ch1 = '9';
+            String st = "Abc 123";
+            Console.WriteLine(Char.IsLetter(ch));
+            Console.WriteLine(Char.IsLetterOrDigit(ch1));
+            Console.WriteLine(Char.ToUpper(ch));
+            for(int i=0;i<st.Length;i++)
+            {
+                if (Char.IsUpper(st[i]))
+                    Console.WriteLine(st[i] + "Is UpperCase Letter");
+                else if (Char.IsLower(st[i]))
+                    Console.WriteLine(st[i] + "Is LowerCase Letter");
+                else if (Char.IsDigit(st[i]))
+                    Console.WriteLine(st[i] + "Is Digit");
+                else if (Char.IsLetterOrDigit(st[i]))
+                    Console.WriteLine(st[i] + "Is Digit");
+            }
+
+
+
+        }
+            
+    }
+}
+=======
+These are the some of the structures in char structure.
+we can access them by using Char structure.
