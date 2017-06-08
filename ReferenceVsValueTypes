@@ -1,0 +1,20 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace asishcsharp
+{
+    class ReferenceVsValueTypes
+    {
+        public static void Main()
+        {
+            int i = 100, j;
+            Object iobj = i; // this is called Boxing and it is implicitly done
+            Console.WriteLine(iobj);
+            j = i + (int)iobj; // this is called UnBoxing and it is explicitly done
+            Console.WriteLine(j);
+        }
+    }
+}
