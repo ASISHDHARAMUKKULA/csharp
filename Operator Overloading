@@ -14,7 +14,7 @@ namespace asishcsharp
             this.x = x;
             this.y = y;
         }
-        public static bool  operator ==(OperatorOverloading p1,OperatorOverloading p2)
+        public static bool  operator ==(OperatorOverloading p1,OperatorOverloading p2) // if we overload == operator the we have to overload != operator also.
         {
             return p1.x == p2.x && p1.y == p2.y;
 
