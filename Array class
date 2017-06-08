@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace asishcsharp
+{
+    class arrayclass
+    {
+        static void Main()
+        {
+            int[] a = { 10, 20, 3, 40 };
+            Array.Sort(a);
+            foreach (int i in a)
+                Console.WriteLine("array sorted:" + i);
+            Console.WriteLine(Array.BinarySearch(a, 20));
+            Console.WriteLine(Array.IndexOf(a, 20));
+            Array.Reverse(a);
+            foreach (int c in a)
+                Console.WriteLine(c);
+            
+        }
+
+        
+    }
+}
+
+
+
+// These are the methods in Array class .  
+
