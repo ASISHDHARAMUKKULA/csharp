@@ -1,0 +1,48 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace asishcsharp
+{
+    class OperatorOverloading
+    {
+        private int x, y;
+        public OperatorOverloading(int x,int y)
+        {
+            this.x = x;
+            this.y = y;
+        }
+        public static bool  operator ==(OperatorOverloading p1,OperatorOverloading p2)
+        {
+            return p1.x == p2.x && p1.y == p2.y;
+
+        }
+        public static bool operator !=(OperatorOverloading p1, OperatorOverloading p2)
+        {
+            return p1.x != p2.x && p1.y != p2.y;
+
+        }
+        public static OperatorOverloading operator ++(OperatorOverloading p1)
+        {
+            p1.x++;
+            return p1;
+        }
+        public override string ToString()
+        {
+            return string.Format("{0},{1}", x, y);
+        }
+        class OperatorOverloadingDemo
+        {
+            public static void Main()
+            {
+                OperatorOverloading p1 = new OperatorOverloading(10, 20);
+                OperatorOverloading p2 = new OperatorOverloading(10, 20);
+                Console.WriteLine(p1 == p2);
+                p1++;
+                Console.WriteLine(p1);
+            }
+        }
+    }
+}
