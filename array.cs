@@ -11,7 +11,7 @@ namespace asishcsharp
         public static void Main()
         {
             int[] intarray;
-            intarray = new int[5] { 1, 2, 3, 4 ,5};
+            intarray = new int[5] { 1, 2, 3, 4 ,5}; //initialising Array
             Console.WriteLine(intarray[0]);
             Console.WriteLine(intarray[1]);
             Console.WriteLine(intarray[2]);
@@ -19,7 +19,7 @@ namespace asishcsharp
             {
                 Console.WriteLine(b);
             }
-            int[,] numbers = new int[3, 2] { { 1, 2 }, { 3, 4 }, { 5, 6 } };
+            int[,] numbers = new int[3, 2] { { 1, 2 }, { 3, 4 }, { 5, 6 } };  // initialising Two Dimensional Array
             foreach(int c in numbers)
             {
                 Console.WriteLine(c);
