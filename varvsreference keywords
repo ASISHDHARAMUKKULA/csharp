@@ -1,0 +1,20 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace asishcsharp
+{
+    class varvsdynamic
+    {
+        public static void Main()
+        {
+            var a = 10;
+           a = "asish";
+            dynamic b = 10;
+             b = "asish";
+
+        }
+    }
+}
